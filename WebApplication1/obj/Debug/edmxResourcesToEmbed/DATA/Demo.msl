@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DataDemoModelStoreContainer" CdmEntityContainer="DataDemoEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="DataDemoModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="IdCategory" ColumnName="IdCategory" />
+          <ScalarProperty Name="NameCategory" ColumnName="NameCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="DataDemoModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
+          <ScalarProperty Name="NameProduct" ColumnName="NameProduct" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK__Product__IdCateg__145C0A3F" TypeName="DataDemoModel.FK__Product__IdCateg__145C0A3F" StoreEntitySet="Product">
+      <EndProperty Name="Category">
+        <ScalarProperty Name="IdCategory" ColumnName="IdCategory" />
+      </EndProperty>
+      <EndProperty Name="Product">
+        <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
